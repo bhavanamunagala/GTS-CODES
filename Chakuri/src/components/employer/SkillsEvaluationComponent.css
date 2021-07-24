@@ -1,0 +1,15 @@
+.skillsEvaluationaccept{
+    float:right;
+}
+.skillsEvaluationreject{
+    float:right;
+}
+.scroll {
+    display:block;
+    padding:0px;
+    margin-top:0px;
+    width:1000px;
+    height:100px;
+    overflow-y:auto;
+    overflow-x: hidden;
+  }

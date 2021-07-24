@@ -1,0 +1,49 @@
+{
+  "recommended_trainings": [
+    {
+      
+      "id": 1,
+      "training":"Python",
+      "training_name": "Learn Python fundamentals",
+      "date_posted": "17-Jun-2020",
+      "date_applied": "20-Jun-2020",
+      "experience": "Beginner",
+      "skills": "Python",
+      "fees": "2000"
+     
+    },
+    {
+      
+      "id": 2,
+      "training":"SQL",
+      "training_name": "Learn Basics of Database Management",
+      "date_posted": "10-Jun-2020",
+      "date_applied": "15-Jun-2020",
+      "experience": "Intermediate",
+      "skills": "SQL",
+      "fees": "3000"
+    },
+    {
+      
+      "id": 3,
+      "training":"Python",
+      "training_name": "Learn Python fundamentals",
+      "date_posted": "17-Jun-2020",
+      "date_applied": "20-Jun-2020",
+      "experience": "Beginner",
+      "skills": "Python",
+      "fees": "5000"
+    },
+    {
+      
+      "id": 4,
+      "training":"Java",
+      "training_name": "Introduction to Java Programming",
+      "date_posted": "21-Jun-2020",
+      "date_applied": "28-Jun-2020",
+      "experience": "Expert",
+      "skills": "Java",
+      "fees": "3500"
+    }
+  ]
+}

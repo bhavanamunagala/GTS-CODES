@@ -1,0 +1,42 @@
+.addBtn{
+
+  background-color:royalblue;
+     border-radius: 25px;
+   color: #eeeeee;
+   /* text-align: right; */
+     width: 85px;
+     font-size: 15px;
+     float: right;
+ }
+ .hrName1{  
+       
+     border-top: 2px solid black;
+     border-color: black;
+ }
+ .cardName
+ {
+   border-radius: 10px;
+   border-color: black;
+   background-color:bg-white;
+ }
+ 
+ /* .des{
+  
+   background-color:transparent;
+   border-bottom-color: transparent; 
+ } */
+ 
+ /* .vertical-scrollable> .row { 
+   position: absolute; 
+   top: 120px; 
+   bottom: 100px; 
+   left: 180px; 
+   width: 50%; 
+   overflow-y: scroll;  
+ }  */
+ /* .scroll{
+ display:block;
+ overflow-x: hidden;
+  overflow-y: auto; 
+ 
+ }  */

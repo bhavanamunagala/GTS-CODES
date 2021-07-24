@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "10267311-7fec-4a97-9e4c-2cab0d8be3fb",
+		"name": "GTSJobApplicationStatusService-mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Job Application details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_job_application_status/gts_job_application_status_id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_job_application_status",
+						"gts_job_application_status_id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_job_application_status/gts_job_application_status_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_job_application_status",
+								"gts_job_application_status_id"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25/10, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n},  "
+				}
+			]
+		},
+		{
+			"name": "Job Application id is not  found",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_job_application_status/gts_job_application_status_id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_job_application_status",
+						"gts_job_application_status_id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_job_application_status/gts_job_application_status_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_job_application_status",
+								"gts_job_application_status_id"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": false,\n\"message\": \" Job Application id is not  found \"\n\"status_code\": 404\n}"
+				}
+			]
+		},
+		{
+			"name": "Job Application  details updated successfully",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"30\", \n\"gts_screening_candidates\": 30, \n\"gts_candidates_applied\": \"90\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \" Krishna\", \n\"gts_average_test_score\": 9.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"React Js Developer\" \n\n\n},  "
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_job_application_status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_job_application_status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"30\", \n\"gts_screening_candidates\": 30, \n\"gts_candidates_applied\": \"90\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \" Krishna\", \n\"gts_average_test_score\": 9.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"React Js Developer\" \n\n\n},  "
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_job_application_status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_job_application_status"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": true,\n\"message\": \" Job Application  details updated successfully\"   ,                                                       \"status_code\": 201\n}"
+				}
+			]
+		},
+		{
+			"name": "Job Application id is not  found",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"gts_user_id\": 6, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n\n\n},  "
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_job_application_status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_job_application_status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"gts_user_id\": 6, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n\n\n},  "
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_job_application_status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_job_application_status"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": false,\n\"message\": \" Job Application  id is not found \"\n\"status_code\": 404\n}"
+				}
+			]
+		},
+		{
+			"name": "Job Application   details are deleted successfully",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_employer_placement_id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_employer_placement_id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_employer_placement_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_employer_placement_id"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": true,\n\"message\": \"Job Application   details are deleted successfully\"\n\"status_code\": 201\n"
+				}
+			]
+		},
+		{
+			"name": "Job Application  details are not found",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_employer_placement_id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_employer_placement_id"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_employer_placement_id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_employer_placement_id"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": false,\n\"message\": \"Job Application  details are not found\"\n\"status_code\": 404\n}"
+				}
+			]
+		},
+		{
+			"name": "Job Application Status details are created successfully",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n\n\n},    { \"gts_user_id\": 2, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Java Developer\" \n\n\n},{ \"gts_user_id\": 3, \n\"gts_shortlisted_candidates\": \"15\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"60\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Fullstack Developer\" \n\n\n}]"
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_job_application_status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_job_application_status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n\n\n},    { \"gts_user_id\": 2, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Java Developer\" \n\n\n},{ \"gts_user_id\": 3, \n\"gts_shortlisted_candidates\": \"15\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"60\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Fullstack Developer\" \n\n\n}]"
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_job_application_status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_job_application_status"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": true,\n\"message\":\"Job Application Status details are created successfully\",\n\"status_code\": 201\n}"
+				}
+			]
+		},
+		{
+			"name": "Job Application id is not  found",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n\n\n},    { \"gts_user_id\": 2, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Java Developer\" \n\n\n},{ \"gts_user_id\": 3, \n\"gts_shortlisted_candidates\": \"15\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"60\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Fullstack Developer\" \n\n\n}]"
+				},
+				"url": {
+					"raw": "{{url}}/v1/gts_job_application_status",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"gts_job_application_status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{ \"gts_user_id\": 1, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Ram Gopal Krishna\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Web Developer\" \n\n\n},    { \"gts_user_id\": 2, \n\"gts_shortlisted_candidates\": \"10\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"50\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Java Developer\" \n\n\n},{ \"gts_user_id\": 3, \n\"gts_shortlisted_candidates\": \"15\", \n\"gts_screening_candidates\": 20, \n\"gts_candidates_applied\": \"60\", \n\"gts_rejected_candidates\": \"10\", \n\"gts_user_name\": \"Nisha\", \n\"gts_average_test_score\": 7.25, \n\"gts_round_status\": \"Completed\", \n\"gts_last_round\": \"Yet to be evaluated\", \n\"gts_job_role\": \"Fullstack Developer\" \n\n\n}]"
+						},
+						"url": {
+							"raw": "{{url}}/v1/gts_job_application_status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"gts_job_application_status"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"success\": false,\n\"message\": \" Job Application id is not  found \"\n\"status_code\": 404\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+/* .form-control{
+  width: 100% !important;;
+}
+.sorting{
+
+} */
+.sorting{
+  color:#0d6efd;
+}
+.sorting_desc{
+  color:#0d6efd;
+}
+
+.sorting_asc{
+  color:#0d6efd;
+}
+.table.dataTable thead{
+  color:#0d6efd;
+}
+.table>:not(:last-child)>:last-child>* {
+   border-bottom-color:white;
+}
+
+.EmpHstrySearch{
+float: right;
+}

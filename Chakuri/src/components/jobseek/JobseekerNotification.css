@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: ghostwhite;
+}
+
+/* header-part start */
+
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: white;
+}
+
+#notification-container {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.fixed-conatiner {
+    z-index: 10 !important;
+    background-color: #fff !important;
+}
+.header-box {
+    margin-left: 80px;
+    margin-top: 300px;
+    font-size: 20px;
+    border-bottom: 3px solid rgb(49, 48, 48);
+    margin-right: 220px;
+    padding: 20px;
+}
+.main-grid {
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 200px;
+    height: 500px;
+    width: 83%;
+}
+.jobseeker-grid {
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 30px;
+    width: 98%;
+}
+
+.left-part {
+    margin-left: 20px;
+}
+.user-size {
+    font-size: 70px;
+    position: absolute;
+}
+.right-part {
+    margin-left: 150px;
+}
+.scrollarea .scrollbar-container.vertical {
+    width: 15px !important;
+    border-radius: 10px;
+    z-index: 1 !important;
+}
+.scrollarea .scrollbar-container.vertical .scrollbar {
+    width: 15px !important;
+    border-radius: 10px;
+    height: 300px !important;
+}

@@ -1,0 +1,156 @@
+server:
+ port: 4711
+
+
+# ssl:
+#   key-store-password: tomcat1
+#   key-store: classpath:mykeystore.p12
+#   key-store-type: PKCS12
+#   key-alias: tomcat1
+---
+spring:
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: CET
+   
+---
+spring:
+  datasource:
+#     url: jdbc:mysql://gts-chakuri-db.cezw3zk6ngsr.ap-south-1.rds.amazonaws.com:3306/GTS_CHAKURI_DB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+#     username: admin
+#     password: 123456789
+#    url: jdbc:mysql://localhost/gts_chakuri_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+#    username: admin
+#    password: 123456789
+
+#  sunny credentials
+
+
+
+
+
+    url: jdbc:mysql://localhost/GTS_CHAKURI_DB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: gts 
+    password: Gts@1234
+
+
+
+
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 489630767816-8iii3jveubnmqmevetail6u72suic0io.apps.googleusercontent.com
+            client-secret: sA4TIrc1Llwum7YsbYR2yrJ2
+            scope:
+               - email
+               - profile
+            
+            
+          facebook: 
+            clientId: 303075410832221
+            clientSecret: 65b803ffe88da1bfc17a37d3c6274349
+            scope:
+               - email
+               - public_profile
+          
+          linkedin: 
+            clientId: 77krnrtolqbyzb
+            clientSecret: tKrrVQCnVvSZe9yi
+            scope:  r_liteprofile, r_emailaddress
+            authorization-grant-type: authorization_code
+            redirect-uri: "https://localhost:4711/login/oauth2/code/linkedin"
+            client-name: Linkedin
+            provider: linkedin
+            client-authentication-method: post
+          
+        provider:
+          linkedin:
+            authorization-uri: https://www.linkedin.com/oauth/v2/authorization
+            token-uri: https://www.linkedin.com/uas/oauth2/accessToken
+            user-info-uri: https://api.linkedin.com/v2/me
+            jwk-set-uri: 12321
+            user-name-attribute: id
+---
+spring:  
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: sunnyemail6@gmail.com
+    password: rlfdorihnxtrjdkr
+    port: 587
+    protocol: smtp
+    test-connection: false
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    
+    
+                 
+---          
+           
+tockenSecret: jdhfknksdd34sw           
+tockenSecret2: jdkflrkjeolfl34dd61_0=3fd       
+
+---
+
+# Starts from hier all the swagger comments           
+userController:
+  swagger-ui:
+    auth-description: Bearer JWT Token
+
+  createUser:
+    notes: for creating  a user use URL Path  
+
+#spring.messages.basename=messages,messages_en
+
+http:
+  resp:
+    account:
+      created:
+        success: Account created Successfully
+        failure: Account does not created
+        
+  message:
+    login:
+      success: Authenticated successfully
+      true: true
+      false: false
+      failure: Authentication failed
+    
+    success:
+      responsetrue: true
+      responsefalse: false
+    
+    account:
+      updated:
+        success: Account updated successfully
+        failure: Account Nr does not found
+
+  response:
+    200: 200
+    201: 201
+    202: 202
+    500: 500   
+    
+#spring.security.oauth2.client.registration.linkedin.clientId=<your-client-id>
+#spring.security.oauth2.client.registration.linkedin.clientSecret=<your-client-secret>
+#spring.security.oauth2.client.registration.linkedin.client-authentication-method=post
+#spring.security.oauth2.client.registration.linkedin.authorization-grant-type=authorization_code
+#spring.security.oauth2.client.registration.linkedin.scope=r_liteprofile, r_emailaddress
+#spring.security.oauth2.client.registration.linkedin.redirect-uri-template={baseUrl}/login/oauth2/code/{registrationId}
+#spring.security.oauth2.client.registration.linkedin.client-name=Linkedin
+#spring.security.oauth2.client.registration.linkedin.provider=linkedin
+#spring.security.oauth2.client.provider.linkedin.authorization-uri=https://www.linkedin.com/oauth/v2/authorization
+#spring.security.oauth2.client.provider.linkedin.token-uri=https://www.linkedin.com/oauth/v2/accessToken
+#spring.security.oauth2.client.provider.linkedin.user-info-uri=https://api.linkedin.com/v2/me
+#spring.security.oauth2.client.provider.linkedin.user-name-attribute=id
+#linkedin.email-address-uri=https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))
+  

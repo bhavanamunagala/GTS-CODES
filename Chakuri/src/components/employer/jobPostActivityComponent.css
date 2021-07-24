@@ -1,0 +1,29 @@
+/* .form
+{
+  border-color: black;
+  border-radius: 2px;
+  background-color:white;
+} */
+.hrName{  
+      
+   border-top: 2px solid black;
+   border-color: black;
+  
+}
+.card
+{
+  border-radius: 10px;
+  border-color: black;
+  background-color:bg-white;
+}
+
+
+  .btnn{
+    background-color:royalblue;
+    border-radius: 25px;
+  color: #eeeeee;
+  /* text-align: right; */
+    width: 150px;
+    font-size: 10px;
+
+  }

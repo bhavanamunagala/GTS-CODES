@@ -1,0 +1,21 @@
+create table gts_job_application_status(gts_job_application_status_id BIGINT(11) NOT NULL,
+gts_user_id BIGINT(11) NOT NULL,
+gts_job_application_status_shortlisted_candidates INT,
+gts_job_application_status_screening_candidates INT,
+gts_job_application_status_rejected_candidates INT,
+gts_job_application_status_candidates_applied INT,
+gts_job_application_status_average_test_score INT,
+gts_job_application_status_round_status INT,
+gts_job_application_status_last_round INT,
+PRIMARY KEY(gts_job_application_status_id),
+UNIQUE KEY(gts_job_application_status_id));
+INSERT INTO gts_job_application_status(gts_job_application_status_id,
+gts_user_id ,
+gts_job_application_status_shortlisted_candidates ,
+gts_job_application_status_screening_candidates ,
+gts_job_application_status_rejected_candidates ,
+gts_job_application_status_candidates_applied ,
+gts_job_application_status_average_test_score ,
+gts_job_application_status_round_status ,
+gts_job_application_status_last_round)
+values(1,1,20,12,8,40,75,0,1);

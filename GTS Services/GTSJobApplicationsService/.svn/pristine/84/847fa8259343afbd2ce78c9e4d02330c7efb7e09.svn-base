@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "027f9ad9-fb12-4ade-976a-dc6d11e5c3ad",
+		"name": "GTSJobApplication-Local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create job application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gts_job_application_id\": \"17\",\r\n    \"gts_job_id\": 1,\r\n    \"gts_job_application_date\": \"2020-01-02\",\r\n    \"gts_job_applicant_id\": 1,\r\n    \"gts_applicant_proposal\": \"sdfdsfdsf\",\r\n    \"gts_job_application_status\": \"offfered\",\r\n    \"gts_job_application_updated_date\": \"2020-01-01\",\r\n    \"gts_job_offered_date\": \"2020-08-13\",\r\n    \"is_active\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get job application by job application id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"gts_job_application_id\": \"14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete gts job application by gts jobapplication id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"gts_job_application_id\": \"15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jobid is not found",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gts_job_application_id\": 1,\r\n    \"gts_job_id\": 2,\r\n    \"gts_job_application_date\": \"2020-01-02\",\r\n    \"gts_job_applicant_id\": 1,\r\n    \"gts_applicant_proposal\": \"sdfdsfdsf\",\r\n    \"gts_job_application_status\": \"offfered\",\r\n    \"gts_job_application_updated_date\": \"2020-01-01\",\r\n    \"gts_job_offered_date\": \"2020-08-13\",\r\n    \"is_active\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user job application updated  successfully",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gts_job_application_id\": 1,\r\n    \"gts_job_id\": 1,\r\n    \"gts_job_application_date\": \"2020-01-02\",\r\n    \"gts_job_applicant_id\": 1,\r\n    \"gts_applicant_proposal\": \"sdfdsfdsf\",\r\n    \"gts_job_application_status\": \"offfered\",\r\n    \"gts_job_application_updated_date\": \"2020-01-01\",\r\n    \"gts_job_offered_date\": \"2020-08-13\",\r\n    \"is_active\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get list of all job applications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/applications",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get gts job application by job applicaion id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application?jobApplicationId=27",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					],
+					"query": [
+						{
+							"key": "jobApplicationId",
+							"value": "27"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gts jobapplication id is wrong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application?jobApplicationId=5",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					],
+					"query": [
+						{
+							"key": "jobApplicationId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gts job id not found",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gts_job_application_id\": 1,\r\n    \"gts_job_id\": 2,\r\n    \"gts_job_application_date\": \"2020-01-02\",\r\n    \"gts_job_applicant_id\": 1,\r\n    \"gts_applicant_proposal\": \"sdfdsfdsf\",\r\n    \"gts_job_application_status\": \"offfered\",\r\n    \"gts_job_application_updated_date\": \"2020-01-01\",\r\n    \"gts_job_offered_date\": \"2020-08-13\",\r\n    \"is_active\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete gts job application by gts jobapplication id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application?jobApplicationId=27",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					],
+					"query": [
+						{
+							"key": "jobApplicationId",
+							"value": "27"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gts job application id wrong",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/application?jobApplicationId=12",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"application"
+					],
+					"query": [
+						{
+							"key": "jobApplicationId",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all gts job applications",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/jobs/applications",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"jobs",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2ea20b8f-67bd-4c25-b381-bd2a2d597f42",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ffa85dcf-765e-43b3-826e-8a801882f56f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "9667f199-0d9b-4c24-ac53-ccae63382802",
+			"key": "url",
+			"value": "http://localhost:4736"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,19 @@
+CREATE TABLE `gts_candidate_agreement` (
+  `candidate_agreement_id` bigint NOT NULL,
+  `user_id` bigint NOT NULL,
+  `recruiter_id` bigint NOT NULL,
+  `employer_id` bigint NOT NULL,
+  `company_id` bigint NOT NULL,
+  `jobseeker_id` bigint NOT NULL,
+  `project_manager_id` bigint NOT NULL,
+  `client_company_id` bigint NOT NULL,
+  `job_title_id` bigint NOT NULL,
+  `candidate_agreement_date` date DEFAULT NULL,
+  `candidate_agreement_no_of_months` int DEFAULT NULL,
+  `candidate_agreement_salary` int DEFAULT NULL,
+  `candidate_agreement_salary_currency` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`candidate_agreement_id`),
+  UNIQUE KEY `candidate_agreement_id_UNIQUE` (`candidate_agreement_id`),
+  KEY `GTSCandidateAgreement_idx` (`user_id`),
+  CONSTRAINT `GTSCandidateAgreement` FOREIGN KEY (`user_id`) REFERENCES `gts_users` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
